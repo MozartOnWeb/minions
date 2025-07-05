@@ -1,6 +1,13 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* COLORS */
+  --cream: #fff6e8;
+  --white: #ffffff;
+  --black: #1e1e1e;
+  --blue: #4b88e3;
+  --green: #9de784;
+  --purple: #b48fea;
+  --red: #e34b4b;
+  --yellow: #eec867;
 }
 
 html,
@@ -10,9 +17,9 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--black);
+  background: var(--cream);
+  font-family: var(--satoshi), Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

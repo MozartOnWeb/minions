@@ -1,0 +1,76 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 3rem;
+  height: 7rem;
+  background-color: var(--cream);
+  z-index: 90;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   border-bottom: 1px solid #0a523563;
+
+  svg {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.4rem;
+
+    a {
+      text-transform: uppercase;
+      font-weight: 500;
+      color: #0a5235;
+      font-family: var(--switzer);
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+
+    button,
+    a {
+      position: relative;
+      font-family: var(--switzer);
+      border: 1.5px solid #0a5235;
+      padding: 15px 0px;
+      width: 170px;
+      border-radius: 100;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #0a5235;
+
+      &:nth-child(1) {
+        background-color: var(--purple);
+      }
+      &:nth-child(2) {
+        background-color: var(--yellow);
+      }
+    }
+
+    button::after,
+    a::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 5px;
+      background-color: #0a5235;
+      top: 8px;
+      z-index: -1;
+      border-radius: 100;
+    }
+  }
+}

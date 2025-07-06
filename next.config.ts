@@ -5,6 +5,14 @@ const nextConfig: NextConfig = {
   sassOptions: {
     // additionalData: `$var: red;`,
     // implementation: "scss",
+    images: {
+      remotePatterns: [
+        {
+          protocol: "https",
+          hostname: "images.pexels.com",
+        },
+      ],
+    },
   },
 };
 
